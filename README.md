@@ -6,7 +6,7 @@ ComponentTableView 是组件化、高复用的UITableview控件。
 
 # 使用介绍
 
-a. 你的ViewController继承BaseAssemblyDispatcher类，重写components方法即可；例如：
+1. 你的ViewController继承BaseAssemblyDispatcher类，重写components方法即可；例如：
 ```object-c
     - (NSArray *)components{
             return [NSArray arrayWithObjects:
@@ -14,9 +14,10 @@ a. 你的ViewController继承BaseAssemblyDispatcher类，重写components方法�
             @[@"UITitleNumberComponentKey", NSStringFromClass([UITitleNumberComponent class])] ,nil];
         }
 ```
-b. 实现自己的中间件。首先继承BaseAssemblyComponent，其次在setupComponent方法里初始化数据源or接受外面传进来的数据源，然后调用系统绘制TableviewCell的方法。eg：UIListTimeComponent和UITitleNumberComponent
+``````
+2. 实现自己的中间件。首先继承BaseAssemblyComponent，其次在setupComponent方法里初始化数据源or接受外面传进来的数据源，然后调用系统绘制TableviewCell的方法。eg：UIListTimeComponent和UITitleNumberComponent
 
-c. 若想复用别人的中间件，仅仅只需要在UIViewController修改components方法；
+3. 若想复用别人的中间件，仅仅只需要在UIViewController修改components方法；
 
 
 
