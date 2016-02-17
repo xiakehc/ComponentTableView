@@ -22,8 +22,8 @@ ComponentTableView 是组件化、高复用的UITableview控件。
 
 
 # 演示项目
-![](img_url)
-![](img_url)
+![](https://github.com/WPDreamMelody/ComponentTableView/blob/master/img/home.png)
+![](https://github.com/WPDreamMelody/ComponentTableView/blob/master/img/detail.png)
 
 
 # 安装
