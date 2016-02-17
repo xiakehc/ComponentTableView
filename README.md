@@ -22,7 +22,7 @@ ComponentTableView 是组件化、高复用的UITableview控件。
 
 
 # 演示项目
-![](https://github.com/WPDreamMelody/ComponentTableView/blob/master/img/home.png)         
+![](https://github.com/WPDreamMelody/ComponentTableView/blob/master/img/home.png) 
 ![](https://github.com/WPDreamMelody/ComponentTableView/blob/master/img/detail.png)
 
 
