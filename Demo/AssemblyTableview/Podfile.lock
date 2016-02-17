@@ -1,0 +1,14 @@
+PODS:
+  - ComponentTableView (0.0.1)
+
+DEPENDENCIES:
+  - ComponentTableView (from `ComponentTableView.podspec`)
+
+EXTERNAL SOURCES:
+  ComponentTableView:
+    :podspec: ComponentTableView.podspec
+
+SPEC CHECKSUMS:
+  ComponentTableView: 3a751c32f5be2a6b15e602053d7119cab7b74347
+
+COCOAPODS: 0.39.0
