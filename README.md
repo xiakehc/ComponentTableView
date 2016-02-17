@@ -14,7 +14,7 @@ ComponentTableView 是组件化、高复用的UITableview控件。
             @[@"UITitleNumberComponentKey", NSStringFromClass([UITitleNumberComponent class])] ,nil];
         }
 ```
-``````
+
 2. 实现自己的中间件。首先继承BaseAssemblyComponent，其次在setupComponent方法里初始化数据源or接受外面传进来的数据源，然后调用系统绘制TableviewCell的方法。eg：UIListTimeComponent和UITitleNumberComponent
 
 3. 若想复用别人的中间件，仅仅只需要在UIViewController修改components方法；
