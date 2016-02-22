@@ -52,8 +52,3 @@ ComponentTableView 是组件化、高复用的UITableview控件。
 
 ComponentTableView 使用 MIT 许可证，详情见 LICENSE 文件。
 
-
-
-# 性能测试
-
-加入中......
