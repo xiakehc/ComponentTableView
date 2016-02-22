@@ -28,9 +28,11 @@ ComponentTableView 是组件化、高复用的UITableview控件。
 
 # 安装
 
-1. 在 Podfile 中添加 pod "ComponentTableView"。
-2. 执行 pod install 或 pod update。
-3. 导入需要的头文件。例如：#import "BaseAssemblyComponent.h"
+1. 先pod search ComponentTableView下，若能搜索到继续第二步。
+   若不能搜索到，执行命令pod setup，clone一份到本地。再执行pod search ComponentTableView可以看到各个不同版本；
+2. 在 Podfile 中添加 pod "ComponentTableView"。
+3. 执行 pod install 或 pod update。
+4. 导入需要的头文件。例如：#import "BaseAssemblyComponent.h"
 
 
 
