@@ -1,56 +1,56 @@
 # ComponentTableView
-ComponentTableView 是组件化、高复用的UITableview控件。
+ComponentTableView is component-based , high UITableview controls reuse.
 
-为了更方便解耦UIViewController和Cell，我们提出了ComponentTableView。它把Cell的组装和业务逻辑完全封装在自己的Component里面（需要继承基类BaseAssemblyComponent），清理了UIViewController的负荷，完全是一种中间件。同时Component支持内部发API服务和页面跳转。
+To make it easier UIViewController and decoupling Cell, we propose ComponentTableView. It assembles and business logic Cell entirely encapsulated in its own Component inside ( need to subclass the base class BaseAssemblyComponent), clean up UIViewController load is a completely middleware. Meanwhile Component API services and support internal hair page jump.
 
 
-# 使用介绍
+# Use Introduction
 
-1.   你的ViewController继承BaseAssemblyDispatcher类，重写components方法即可；例如：
+1.  Your ViewController inherit BaseAssemblyDispatcher class method to rewrite components ; for example :
 ```object-c
     - (NSArray *)components{
             return [NSArray arrayWithObjects:
             @[@"UIListTimeComponentKey", NSStringFromClass([UIListTimeComponent class])],
             @[@"UITitleNumberComponentKey", NSStringFromClass([UITitleNumberComponent class])] ,nil];
         }
-```
-
-2.   实现自己的中间件。首先继承BaseAssemblyComponent，其次在setupComponent方法里初始化数据源or接受外面传进来的数据源，然后调用系统绘制TableviewCell的方法。eg：UIListTimeComponent和UITitleNumberComponent
-
-3.   若想复用别人的中间件，仅仅只需要在UIViewController修改components方法；
 
 
+2.  Realize their middleware. First Inherited BaseAssemblyComponent, followed by initialization data source or accept the data that comes out in setupComponent source method , and then call the system draws TableviewCell approach. eg: UIListTimeComponent and UITitleNumberComponent
 
-# 演示项目
+3.  If you want to reuse someone else's middleware, only you need to modify the components method in UIViewController；
+
+
+
+#  Demonstrations
 ![](https://github.com/WPDreamMelody/ComponentTableView/blob/master/img/home.png) 
 ![](https://github.com/WPDreamMelody/ComponentTableView/blob/master/img/detail.png)
 
 
-# 安装
+# Installation
 
-1. 先pod search ComponentTableView下，若能搜索到继续第二步。
-   若不能搜索到，执行命令pod setup，clone一份到本地。再执行pod search ComponentTableView可以看到各个不同版本；
-2. 在 Podfile 中添加 pod "ComponentTableView"。
-3. 执行 pod install 或 pod update。
-4. 导入需要的头文件。例如：#import "BaseAssemblyComponent.h"
-
-
-
-# 手动安装
-
-1. 下载 ComponentTableView 文件夹内的所有内容。
-2. 将 ComponentTableView 内的源文件添加(拖放)到你的工程。
-3. 导入需要的头文件。例如：#import "BaseAssemblyComponent.h"
+1. From the first pod search ComponentTableView, if we continue to search for the second step .
+   If you can not search , Run pod setup, clone copy locally. Then execute pod search ComponentTableView can see the various versions ;
+2. Add the pod "ComponentTableView" in Podfile in .
+3. Run pod install or pod update.
+4. Import the required header files . For example : #import "BaseAssemblyComponent.h"
 
 
 
-# 文档
+# Installation Manual
 
-你可以在 CocoaDocs 查看在线 API 文档，也可以用 appledoc 本地生成文档。
+1. Download ComponentTableView folder all the contents .
+2. Add the source file ComponentTableView within ( drag and drop ) to your project .
+3. Import the required header files . For example : #import "BaseAssemblyComponent.h"
 
 
 
-# 许可证
 
-ComponentTableView 使用 MIT 许可证，详情见 LICENSE 文件。
+# Document
 
+You can view the online API documentation CocoaDocs, you can also generate documents in appledoc locally.
+
+
+
+# License
+
+ComponentTableView use MIT license , as detailed LICENSE file .
