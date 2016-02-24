@@ -13,7 +13,7 @@ To make it easier UIViewController and decoupling Cell, we propose ComponentTabl
             @[@"UIListTimeComponentKey", NSStringFromClass([UIListTimeComponent class])],
             @[@"UITitleNumberComponentKey", NSStringFromClass([UITitleNumberComponent class])] ,nil];
         }
-
+```
 
 2.  Realize their middleware. First Inherited BaseAssemblyComponent, followed by initialization data source or accept the data that comes out in setupComponent source method , and then call the system draws TableviewCell approach. eg: UIListTimeComponent and UITitleNumberComponent
 
